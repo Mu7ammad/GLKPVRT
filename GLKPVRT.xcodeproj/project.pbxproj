@@ -19,8 +19,19 @@
 		3EDA0B1D150E543600F0B423 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA0B1B150E543600F0B423 /* MainStoryboard_iPad.storyboard */; };
 		3EDA0B1F150E543600F0B423 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA0B1E150E543600F0B423 /* Shader.fsh */; };
 		3EDA0B21150E543600F0B423 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA0B20150E543600F0B423 /* Shader.vsh */; };
-		3EDA0B24150E543600F0B423 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA0B23150E543600F0B423 /* ViewController.m */; };
+		3EDA0B24150E543600F0B423 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA0B23150E543600F0B423 /* ViewController.mm */; };
+		3EDA0B3D150E570C00F0B423 /* libOGLES2Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B3C150E56FE00F0B423 /* libOGLES2Tools.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EDA0B3B150E56FE00F0B423 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EDA0B34150E56FD00F0B423 /* OGLES2Tools.xcode */;
+			proxyType = 2;
+			remoteGlobalIDString = F8748A3A0FF221480052D400;
+			remoteInfo = OGLES2Tools;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3EDA0AFE150E543600F0B423 /* GLKPVRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLKPVRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,18 +40,19 @@
 		3EDA0B06150E543600F0B423 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		3EDA0B08150E543600F0B423 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		3EDA0B0A150E543600F0B423 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		3EDA0B0E150E543600F0B423 /* GLKPVRT-Info.plist */ = {isa = PBXFileReference; path = "GLKPVRT-Info.plist"; sourceTree = "<group>"; };
+		3EDA0B0E150E543600F0B423 /* GLKPVRT-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GLKPVRT-Info.plist"; sourceTree = "<group>"; };
 		3EDA0B10150E543600F0B423 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3EDA0B12150E543600F0B423 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3EDA0B14150E543600F0B423 /* GLKPVRT-Prefix.pch */ = {isa = PBXFileReference; path = "GLKPVRT-Prefix.pch"; sourceTree = "<group>"; };
-		3EDA0B15150E543600F0B423 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		3EDA0B14150E543600F0B423 /* GLKPVRT-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GLKPVRT-Prefix.pch"; sourceTree = "<group>"; };
+		3EDA0B15150E543600F0B423 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3EDA0B16150E543600F0B423 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3EDA0B19150E543600F0B423 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		3EDA0B1C150E543600F0B423 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		3EDA0B1E150E543600F0B423 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
 		3EDA0B20150E543600F0B423 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
-		3EDA0B22150E543600F0B423 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
-		3EDA0B23150E543600F0B423 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3EDA0B22150E543600F0B423 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3EDA0B23150E543600F0B423 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		3EDA0B34150E56FD00F0B423 /* OGLES2Tools.xcode */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OGLES2Tools.xcode; path = Tools/OGLES2/Build/iPhone/OGLES2Tools.xcode; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EDA0B3D150E570C00F0B423 /* libOGLES2Tools.a in Frameworks */,
 				3EDA0B03150E543600F0B423 /* UIKit.framework in Frameworks */,
 				3EDA0B05150E543600F0B423 /* Foundation.framework in Frameworks */,
 				3EDA0B07150E543600F0B423 /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +75,7 @@
 		3EDA0AF3150E543500F0B423 = {
 			isa = PBXGroup;
 			children = (
+				3EDA0B34150E56FD00F0B423 /* OGLES2Tools.xcode */,
 				3EDA0B0C150E543600F0B423 /* GLKPVRT */,
 				3EDA0B01150E543600F0B423 /* Frameworks */,
 				3EDA0AFF150E543600F0B423 /* Products */,
@@ -98,7 +112,7 @@
 				3EDA0B1E150E543600F0B423 /* Shader.fsh */,
 				3EDA0B20150E543600F0B423 /* Shader.vsh */,
 				3EDA0B22150E543600F0B423 /* ViewController.h */,
-				3EDA0B23150E543600F0B423 /* ViewController.m */,
+				3EDA0B23150E543600F0B423 /* ViewController.mm */,
 				3EDA0B0D150E543600F0B423 /* Supporting Files */,
 			);
 			path = GLKPVRT;
@@ -113,6 +127,14 @@
 				3EDA0B14150E543600F0B423 /* GLKPVRT-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3EDA0B35150E56FD00F0B423 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EDA0B3C150E56FE00F0B423 /* libOGLES2Tools.a */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,12 +176,28 @@
 			mainGroup = 3EDA0AF3150E543500F0B423;
 			productRefGroup = 3EDA0AFF150E543600F0B423 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3EDA0B35150E56FD00F0B423 /* Products */;
+					ProjectRef = 3EDA0B34150E56FD00F0B423 /* OGLES2Tools.xcode */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				3EDA0AFD150E543600F0B423 /* GLKPVRT */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3EDA0B3C150E56FE00F0B423 /* libOGLES2Tools.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libOGLES2Tools.a;
+			remoteRef = 3EDA0B3B150E56FE00F0B423 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		3EDA0AFC150E543600F0B423 /* Resources */ = {
@@ -183,7 +221,7 @@
 			files = (
 				3EDA0B13150E543600F0B423 /* main.m in Sources */,
 				3EDA0B17150E543600F0B423 /* AppDelegate.m in Sources */,
-				3EDA0B24150E543600F0B423 /* ViewController.m in Sources */,
+				3EDA0B24150E543600F0B423 /* ViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +308,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLKPVRT/GLKPVRT-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = "Tools/**";
 				INFOPLIST_FILE = "GLKPVRT/GLKPVRT-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -282,6 +321,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GLKPVRT/GLKPVRT-Prefix.pch";
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				HEADER_SEARCH_PATHS = "Tools/**";
 				INFOPLIST_FILE = "GLKPVRT/GLKPVRT-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -307,6 +347,7 @@
 				3EDA0B29150E543600F0B423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

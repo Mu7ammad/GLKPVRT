@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "OGLES2Tools.h"
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
@@ -83,9 +84,14 @@ GLfloat gCubeVertexData[216] =
     
     GLuint _vertexArray;
     GLuint _vertexBuffer;
+    
+    // 3D Model
+	CPVRTModelPOD	m_Scene;
 }
 @property (strong, nonatomic) EAGLContext *context;
 @property (strong, nonatomic) GLKBaseEffect *effect;
+
+-(void) initPod:(NSString*) scene;
 
 - (void)setupGL;
 - (void)tearDownGL;
@@ -145,6 +151,41 @@ GLfloat gCubeVertexData[216] =
         return YES;
     }
 }
+
+
+-(void) initPod:(NSString *)podScene{
+    
+   
+    // Get and set the read path for content files
+	NSString* readPath = [NSString stringWithFormat:@"%@%@", [[NSBundle mainBundle] bundlePath], @"/"];
+    
+    CPVRTResourceFile::SetReadPath([readPath UTF8String]);
+    
+    // Load the scene
+    
+	if(m_Scene.ReadFromFile([[podScene stringByAppendingPathExtension:@"pod"]UTF8String]) != PVR_SUCCESS)
+	{
+		NSLog(@"ERROR: Couldn't load the .pod file\n");
+		
+	}
+    
+	// The cameras are stored in the file. We check it contains at least one.
+	if(m_Scene.nNumCamera == 0)
+	{
+        NSLog(@"ERROR: The scene does not contain a camera. Please add one and re-export.\n");
+		
+	}
+    
+	// We also check that the scene contains at least one light
+	if(m_Scene.nNumLight == 0)
+	{
+		NSLog(@"ERROR: The scene does not contain a light. Please add one and re-export.\n");
+		
+	}
+    
+    
+}
+
 
 - (void)setupGL
 {
