@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E105DCF150EADE3002833C1 /* tex_base.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DCB150EADE3002833C1 /* tex_base.png */; };
+		3E105DD0150EADE3002833C1 /* tex_arm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DCC150EADE3002833C1 /* tex_arm.png */; };
+		3E105DD1150EADE3002833C1 /* tex_base.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DCD150EADE3002833C1 /* tex_base.pvr */; };
+		3E105DD2150EADE3002833C1 /* tex_arm.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DCE150EADE3002833C1 /* tex_arm.pvr */; };
+		3E105DD5150EADF5002833C1 /* Scene.pod in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DD4150EADF5002833C1 /* Scene.pod */; };
+		3E105DD7150EC67B002833C1 /* FragShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DC5150EADBB002833C1 /* FragShader.fsh */; };
+		3E105DD8150EC67E002833C1 /* VertShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DC6150EADBB002833C1 /* VertShader.vsh */; };
 		3EDA0B03150E543600F0B423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B02150E543600F0B423 /* UIKit.framework */; };
 		3EDA0B05150E543600F0B423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B04150E543600F0B423 /* Foundation.framework */; };
 		3EDA0B07150E543600F0B423 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B06150E543600F0B423 /* CoreGraphics.framework */; };
@@ -34,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E105DC5150EADBB002833C1 /* FragShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = FragShader.fsh; sourceTree = "<group>"; };
+		3E105DC6150EADBB002833C1 /* VertShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VertShader.vsh; sourceTree = "<group>"; };
+		3E105DCB150EADE3002833C1 /* tex_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tex_base.png; sourceTree = "<group>"; };
+		3E105DCC150EADE3002833C1 /* tex_arm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tex_arm.png; sourceTree = "<group>"; };
+		3E105DCD150EADE3002833C1 /* tex_base.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = tex_base.pvr; sourceTree = "<group>"; };
+		3E105DCE150EADE3002833C1 /* tex_arm.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = tex_arm.pvr; sourceTree = "<group>"; };
+		3E105DD4150EADF5002833C1 /* Scene.pod */ = {isa = PBXFileReference; lastKnownFileType = file; path = Scene.pod; sourceTree = "<group>"; };
 		3EDA0AFE150E543600F0B423 /* GLKPVRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLKPVRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDA0B02150E543600F0B423 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3EDA0B04150E543600F0B423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,6 +86,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E105DC9150EADBF002833C1 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				3E105DC5150EADBB002833C1 /* FragShader.fsh */,
+				3E105DC6150EADBB002833C1 /* VertShader.vsh */,
+			);
+			name = Shaders;
+			sourceTree = "<group>";
+		};
+		3E105DCA150EADD1002833C1 /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				3E105DCB150EADE3002833C1 /* tex_base.png */,
+				3E105DCC150EADE3002833C1 /* tex_arm.png */,
+				3E105DCD150EADE3002833C1 /* tex_base.pvr */,
+				3E105DCE150EADE3002833C1 /* tex_arm.pvr */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		3E105DD3150EADE9002833C1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E105DD4150EADF5002833C1 /* Scene.pod */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3E105DD6150EAE04002833C1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3E105DD3150EADE9002833C1 /* Models */,
+				3E105DCA150EADD1002833C1 /* Textures */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		3EDA0AF3150E543500F0B423 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +156,8 @@
 		3EDA0B0C150E543600F0B423 /* GLKPVRT */ = {
 			isa = PBXGroup;
 			children = (
+				3E105DD6150EAE04002833C1 /* Assets */,
+				3E105DC9150EADBF002833C1 /* Shaders */,
 				3EDA0B15150E543600F0B423 /* AppDelegate.h */,
 				3EDA0B16150E543600F0B423 /* AppDelegate.m */,
 				3EDA0B18150E543600F0B423 /* MainStoryboard_iPhone.storyboard */,
@@ -209,6 +262,13 @@
 				3EDA0B1D150E543600F0B423 /* MainStoryboard_iPad.storyboard in Resources */,
 				3EDA0B1F150E543600F0B423 /* Shader.fsh in Resources */,
 				3EDA0B21150E543600F0B423 /* Shader.vsh in Resources */,
+				3E105DCF150EADE3002833C1 /* tex_base.png in Resources */,
+				3E105DD0150EADE3002833C1 /* tex_arm.png in Resources */,
+				3E105DD1150EADE3002833C1 /* tex_base.pvr in Resources */,
+				3E105DD2150EADE3002833C1 /* tex_arm.pvr in Resources */,
+				3E105DD5150EADF5002833C1 /* Scene.pod in Resources */,
+				3E105DD7150EC67B002833C1 /* FragShader.fsh in Resources */,
+				3E105DD8150EC67E002833C1 /* VertShader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
