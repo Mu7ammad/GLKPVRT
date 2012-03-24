@@ -11,6 +11,7 @@
 
 #define BUFFER_OFFSET(i) ((char *)NULL + (i))
 
+/*
 // Uniform index.
 enum
 {
@@ -19,19 +20,21 @@ enum
     NUM_UNIFORMS
 };
 GLint uniforms[NUM_UNIFORMS];
+*/
 
 // Index to bind the attributes to vertex shaders
 #define VERTEX_ARRAY	0
 #define NORMAL_ARRAY	1
 #define TEXCOORD_ARRAY	2
 
+/*
 // Attribute index.
 enum
 {
     ATTRIB_VERTEX,
     ATTRIB_NORMAL,
     NUM_ATTRIBUTES
-};
+};*/
 
 // Camera constants. Used for making the projection matrix
 const float g_fCameraNear = 4.0f;
@@ -47,7 +50,7 @@ const int g_ui32Camera = 0;
 
 float			m_fFrame;
 
-
+/*
 GLfloat gCubeVertexData[216] = 
 {
     // Data layout for each line below is:
@@ -94,22 +97,22 @@ GLfloat gCubeVertexData[216] =
     -0.5f, -0.5f, -0.5f,       0.0f, 0.0f, -1.0f,
     -0.5f, 0.5f, -0.5f,        0.0f, 0.0f, -1.0f
 };
-
+*/
 // Source and binary shaders
 const char c_szFragShaderSrcFile[]	= "FragShader.fsh";
 const char c_szFragShaderBinFile[]	= "FragShader.fsc";
 const char c_szVertShaderSrcFile[]	= "VertShader.vsh";
 const char c_szVertShaderBinFile[]	= "VertShader.vsc";
 
-@interface ViewController () {
-    GLuint _program;
+@interface IntroPodViewController () {
+    //GLuint _program;
     
-    GLKMatrix4 _modelViewProjectionMatrix;
-    GLKMatrix3 _normalMatrix;
-    float _rotation;
+    //GLKMatrix4 _modelViewProjectionMatrix;
+    ////GLKMatrix3 _normalMatrix;
+    //float _rotation;
     
-    GLuint _vertexArray;
-    GLuint _vertexBuffer;
+    //GLuint _vertexArray;
+    //GLuint _vertexBuffer;
     
     // 3D Model
 	CPVRTModelPOD	m_Scene;
@@ -132,7 +135,7 @@ const char c_szVertShaderBinFile[]	= "VertShader.vsc";
     
 }
 @property (strong, nonatomic) EAGLContext *context;
-@property (strong, nonatomic) GLKBaseEffect *effect;
+
 
 -(void) initPod:(NSString*) scene;
 
@@ -141,19 +144,19 @@ const char c_szVertShaderBinFile[]	= "VertShader.vsc";
 
 -(BOOL) loadTextures;
 -(BOOL) loadVBOs;
-- (BOOL)loadShaders;
-
+-(BOOL)loadShaders;
 -(void) drawMesh:(int)nodeIndex;
 
+/*
 - (BOOL)compileShader:(GLuint *)shader type:(GLenum)type file:(NSString *)file;
 - (BOOL)linkProgram:(GLuint)prog;
 - (BOOL)validateProgram:(GLuint)prog;
+*/
 @end
 
-@implementation ViewController
+@implementation IntroPodViewController
 
 @synthesize context = _context;
-@synthesize effect = _effect;
 
 
 - (void)viewDidLoad
@@ -392,7 +395,7 @@ const char c_szVertShaderBinFile[]	= "VertShader.vsc";
 	delete[] m_puiVbo;
 	delete[] m_puiIndexVbo;
     
-    
+    /*
     glDeleteBuffers(1, &_vertexBuffer);
     glDeleteVertexArraysOES(1, &_vertexArray);
     
@@ -401,7 +404,7 @@ const char c_szVertShaderBinFile[]	= "VertShader.vsc";
     if (_program) {
         glDeleteProgram(_program);
         _program = 0;
-    }
+    }*/
 }
 
 -(void)drawMesh:(int)nodeIndex{
@@ -781,6 +784,7 @@ const char c_szVertShaderBinFile[]	= "VertShader.vsc";
     return YES;
 }
 
+/*
 - (BOOL)compileShader:(GLuint *)shader type:(GLenum)type file:(NSString *)file
 {
     GLint status;
@@ -860,5 +864,6 @@ const char c_szVertShaderBinFile[]	= "VertShader.vsc";
     
     return YES;
 }
+*/
 
 @end

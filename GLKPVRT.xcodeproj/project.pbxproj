@@ -7,13 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E105DCF150EADE3002833C1 /* tex_base.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DCB150EADE3002833C1 /* tex_base.png */; };
-		3E105DD0150EADE3002833C1 /* tex_arm.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DCC150EADE3002833C1 /* tex_arm.png */; };
+		3E00EFD5151E2D6B00B4218E /* Body.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 3E00EFD2151E2D6B00B4218E /* Body.pvr */; };
+		3E00EFD6151E2D6B00B4218E /* Legs.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 3E00EFD3151E2D6B00B4218E /* Legs.pvr */; };
+		3E00EFD7151E2D6B00B4218E /* Belt.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 3E00EFD4151E2D6B00B4218E /* Belt.pvr */; };
+		3E00EFD9151E2D7500B4218E /* man.pod in Resources */ = {isa = PBXBuildFile; fileRef = 3E00EFD8151E2D7500B4218E /* man.pod */; };
+		3E00EFDE151E2DC800B4218E /* VertShader2.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3E00EFDA151E2DAF00B4218E /* VertShader2.vsh */; };
+		3E00EFDF151E2DCC00B4218E /* FragShader2.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3E00EFDB151E2DAF00B4218E /* FragShader2.fsh */; };
 		3E105DD1150EADE3002833C1 /* tex_base.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DCD150EADE3002833C1 /* tex_base.pvr */; };
 		3E105DD2150EADE3002833C1 /* tex_arm.pvr in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DCE150EADE3002833C1 /* tex_arm.pvr */; };
 		3E105DD5150EADF5002833C1 /* Scene.pod in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DD4150EADF5002833C1 /* Scene.pod */; };
 		3E105DD7150EC67B002833C1 /* FragShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DC5150EADBB002833C1 /* FragShader.fsh */; };
 		3E105DD8150EC67E002833C1 /* VertShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DC6150EADBB002833C1 /* VertShader.vsh */; };
+		3E2DD5CB1510E5B9002F18C5 /* SkinningViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DD5CA1510E5B9002F18C5 /* SkinningViewController.mm */; };
 		3EDA0B03150E543600F0B423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B02150E543600F0B423 /* UIKit.framework */; };
 		3EDA0B05150E543600F0B423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B04150E543600F0B423 /* Foundation.framework */; };
 		3EDA0B07150E543600F0B423 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B06150E543600F0B423 /* CoreGraphics.framework */; };
@@ -24,8 +29,6 @@
 		3EDA0B17150E543600F0B423 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA0B16150E543600F0B423 /* AppDelegate.m */; };
 		3EDA0B1A150E543600F0B423 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA0B18150E543600F0B423 /* MainStoryboard_iPhone.storyboard */; };
 		3EDA0B1D150E543600F0B423 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA0B1B150E543600F0B423 /* MainStoryboard_iPad.storyboard */; };
-		3EDA0B1F150E543600F0B423 /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA0B1E150E543600F0B423 /* Shader.fsh */; };
-		3EDA0B21150E543600F0B423 /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3EDA0B20150E543600F0B423 /* Shader.vsh */; };
 		3EDA0B24150E543600F0B423 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3EDA0B23150E543600F0B423 /* ViewController.mm */; };
 		3EDA0B3D150E570C00F0B423 /* libOGLES2Tools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B3C150E56FE00F0B423 /* libOGLES2Tools.a */; };
 /* End PBXBuildFile section */
@@ -41,13 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E00EFD2151E2D6B00B4218E /* Body.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Body.pvr; sourceTree = "<group>"; };
+		3E00EFD3151E2D6B00B4218E /* Legs.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legs.pvr; sourceTree = "<group>"; };
+		3E00EFD4151E2D6B00B4218E /* Belt.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = Belt.pvr; sourceTree = "<group>"; };
+		3E00EFD8151E2D7500B4218E /* man.pod */ = {isa = PBXFileReference; lastKnownFileType = file; path = man.pod; sourceTree = "<group>"; };
+		3E00EFDA151E2DAF00B4218E /* VertShader2.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VertShader2.vsh; sourceTree = "<group>"; };
+		3E00EFDB151E2DAF00B4218E /* FragShader2.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = FragShader2.fsh; sourceTree = "<group>"; };
 		3E105DC5150EADBB002833C1 /* FragShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = FragShader.fsh; sourceTree = "<group>"; };
 		3E105DC6150EADBB002833C1 /* VertShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = VertShader.vsh; sourceTree = "<group>"; };
-		3E105DCB150EADE3002833C1 /* tex_base.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tex_base.png; sourceTree = "<group>"; };
-		3E105DCC150EADE3002833C1 /* tex_arm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tex_arm.png; sourceTree = "<group>"; };
 		3E105DCD150EADE3002833C1 /* tex_base.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = tex_base.pvr; sourceTree = "<group>"; };
 		3E105DCE150EADE3002833C1 /* tex_arm.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = tex_arm.pvr; sourceTree = "<group>"; };
 		3E105DD4150EADF5002833C1 /* Scene.pod */ = {isa = PBXFileReference; lastKnownFileType = file; path = Scene.pod; sourceTree = "<group>"; };
+		3E2DD5C91510E5B9002F18C5 /* SkinningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinningViewController.h; sourceTree = "<group>"; };
+		3E2DD5CA1510E5B9002F18C5 /* SkinningViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SkinningViewController.mm; sourceTree = "<group>"; };
 		3EDA0AFE150E543600F0B423 /* GLKPVRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLKPVRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDA0B02150E543600F0B423 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3EDA0B04150E543600F0B423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,8 +71,6 @@
 		3EDA0B16150E543600F0B423 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3EDA0B19150E543600F0B423 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		3EDA0B1C150E543600F0B423 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		3EDA0B1E150E543600F0B423 /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
-		3EDA0B20150E543600F0B423 /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
 		3EDA0B22150E543600F0B423 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3EDA0B23150E543600F0B423 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		3EDA0B34150E56FD00F0B423 /* OGLES2Tools.xcode */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = OGLES2Tools.xcode; path = Tools/OGLES2/Build/iPhone/OGLES2Tools.xcode; sourceTree = "<group>"; };
@@ -86,20 +93,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E105DC9150EADBF002833C1 /* Shaders */ = {
+		3E00EFCE151E2D1D00B4218E /* Assets2 */ = {
+			isa = PBXGroup;
+			children = (
+				3E00EFCF151E2D2700B4218E /* Models */,
+				3E00EFD0151E2D3100B4218E /* Textures */,
+			);
+			name = Assets2;
+			sourceTree = "<group>";
+		};
+		3E00EFCF151E2D2700B4218E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3E00EFD8151E2D7500B4218E /* man.pod */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3E00EFD0151E2D3100B4218E /* Textures */ = {
+			isa = PBXGroup;
+			children = (
+				3E00EFD2151E2D6B00B4218E /* Body.pvr */,
+				3E00EFD3151E2D6B00B4218E /* Legs.pvr */,
+				3E00EFD4151E2D6B00B4218E /* Belt.pvr */,
+			);
+			name = Textures;
+			sourceTree = "<group>";
+		};
+		3E00EFD1151E2D4600B4218E /* Shaders2 */ = {
+			isa = PBXGroup;
+			children = (
+				3E00EFDA151E2DAF00B4218E /* VertShader2.vsh */,
+				3E00EFDB151E2DAF00B4218E /* FragShader2.fsh */,
+			);
+			name = Shaders2;
+			sourceTree = "<group>";
+		};
+		3E105DC9150EADBF002833C1 /* Shaders1 */ = {
 			isa = PBXGroup;
 			children = (
 				3E105DC5150EADBB002833C1 /* FragShader.fsh */,
 				3E105DC6150EADBB002833C1 /* VertShader.vsh */,
 			);
-			name = Shaders;
+			name = Shaders1;
 			sourceTree = "<group>";
 		};
 		3E105DCA150EADD1002833C1 /* Textures */ = {
 			isa = PBXGroup;
 			children = (
-				3E105DCB150EADE3002833C1 /* tex_base.png */,
-				3E105DCC150EADE3002833C1 /* tex_arm.png */,
 				3E105DCD150EADE3002833C1 /* tex_base.pvr */,
 				3E105DCE150EADE3002833C1 /* tex_arm.pvr */,
 			);
@@ -114,13 +155,13 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
-		3E105DD6150EAE04002833C1 /* Assets */ = {
+		3E105DD6150EAE04002833C1 /* Assets1 */ = {
 			isa = PBXGroup;
 			children = (
 				3E105DD3150EADE9002833C1 /* Models */,
 				3E105DCA150EADD1002833C1 /* Textures */,
 			);
-			name = Assets;
+			name = Assets1;
 			sourceTree = "<group>";
 		};
 		3EDA0AF3150E543500F0B423 = {
@@ -156,16 +197,18 @@
 		3EDA0B0C150E543600F0B423 /* GLKPVRT */ = {
 			isa = PBXGroup;
 			children = (
-				3E105DD6150EAE04002833C1 /* Assets */,
-				3E105DC9150EADBF002833C1 /* Shaders */,
+				3E105DD6150EAE04002833C1 /* Assets1 */,
+				3E00EFCE151E2D1D00B4218E /* Assets2 */,
+				3E105DC9150EADBF002833C1 /* Shaders1 */,
+				3E00EFD1151E2D4600B4218E /* Shaders2 */,
 				3EDA0B15150E543600F0B423 /* AppDelegate.h */,
 				3EDA0B16150E543600F0B423 /* AppDelegate.m */,
 				3EDA0B18150E543600F0B423 /* MainStoryboard_iPhone.storyboard */,
 				3EDA0B1B150E543600F0B423 /* MainStoryboard_iPad.storyboard */,
-				3EDA0B1E150E543600F0B423 /* Shader.fsh */,
-				3EDA0B20150E543600F0B423 /* Shader.vsh */,
 				3EDA0B22150E543600F0B423 /* ViewController.h */,
 				3EDA0B23150E543600F0B423 /* ViewController.mm */,
+				3E2DD5C91510E5B9002F18C5 /* SkinningViewController.h */,
+				3E2DD5CA1510E5B9002F18C5 /* SkinningViewController.mm */,
 				3EDA0B0D150E543600F0B423 /* Supporting Files */,
 			);
 			path = GLKPVRT;
@@ -260,15 +303,17 @@
 				3EDA0B11150E543600F0B423 /* InfoPlist.strings in Resources */,
 				3EDA0B1A150E543600F0B423 /* MainStoryboard_iPhone.storyboard in Resources */,
 				3EDA0B1D150E543600F0B423 /* MainStoryboard_iPad.storyboard in Resources */,
-				3EDA0B1F150E543600F0B423 /* Shader.fsh in Resources */,
-				3EDA0B21150E543600F0B423 /* Shader.vsh in Resources */,
-				3E105DCF150EADE3002833C1 /* tex_base.png in Resources */,
-				3E105DD0150EADE3002833C1 /* tex_arm.png in Resources */,
 				3E105DD1150EADE3002833C1 /* tex_base.pvr in Resources */,
 				3E105DD2150EADE3002833C1 /* tex_arm.pvr in Resources */,
 				3E105DD5150EADF5002833C1 /* Scene.pod in Resources */,
-				3E105DD7150EC67B002833C1 /* FragShader.fsh in Resources */,
 				3E105DD8150EC67E002833C1 /* VertShader.vsh in Resources */,
+				3E105DD7150EC67B002833C1 /* FragShader.fsh in Resources */,
+				3E00EFDE151E2DC800B4218E /* VertShader2.vsh in Resources */,
+				3E00EFDF151E2DCC00B4218E /* FragShader2.fsh in Resources */,
+				3E00EFD5151E2D6B00B4218E /* Body.pvr in Resources */,
+				3E00EFD6151E2D6B00B4218E /* Legs.pvr in Resources */,
+				3E00EFD7151E2D6B00B4218E /* Belt.pvr in Resources */,
+				3E00EFD9151E2D7500B4218E /* man.pod in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +327,7 @@
 				3EDA0B13150E543600F0B423 /* main.m in Sources */,
 				3EDA0B17150E543600F0B423 /* AppDelegate.m in Sources */,
 				3EDA0B24150E543600F0B423 /* ViewController.mm in Sources */,
+				3E2DD5CB1510E5B9002F18C5 /* SkinningViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
