@@ -132,7 +132,7 @@ const char c_szSceneFile[]			= "man.pod";
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     
-    [self initPod:@"man"];
+    [self initPod:@"man_clothes"];
     [self setupGL];
 }
 

@@ -18,7 +18,9 @@
 		3E105DD5150EADF5002833C1 /* Scene.pod in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DD4150EADF5002833C1 /* Scene.pod */; };
 		3E105DD7150EC67B002833C1 /* FragShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DC5150EADBB002833C1 /* FragShader.fsh */; };
 		3E105DD8150EC67E002833C1 /* VertShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 3E105DC6150EADBB002833C1 /* VertShader.vsh */; };
+		3E10810B15684ED10013FC0C /* man_clothes.pod in Resources */ = {isa = PBXBuildFile; fileRef = 3E10810A15684ED10013FC0C /* man_clothes.pod */; };
 		3E2DD5CB1510E5B9002F18C5 /* SkinningViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3E2DD5CA1510E5B9002F18C5 /* SkinningViewController.mm */; };
+		3E9F72CA152648B100B7F2C0 /* man_rig.pod in Resources */ = {isa = PBXBuildFile; fileRef = 3E9F72C9152648B100B7F2C0 /* man_rig.pod */; };
 		3EDA0B03150E543600F0B423 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B02150E543600F0B423 /* UIKit.framework */; };
 		3EDA0B05150E543600F0B423 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B04150E543600F0B423 /* Foundation.framework */; };
 		3EDA0B07150E543600F0B423 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EDA0B06150E543600F0B423 /* CoreGraphics.framework */; };
@@ -55,8 +57,10 @@
 		3E105DCD150EADE3002833C1 /* tex_base.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = tex_base.pvr; sourceTree = "<group>"; };
 		3E105DCE150EADE3002833C1 /* tex_arm.pvr */ = {isa = PBXFileReference; lastKnownFileType = file; path = tex_arm.pvr; sourceTree = "<group>"; };
 		3E105DD4150EADF5002833C1 /* Scene.pod */ = {isa = PBXFileReference; lastKnownFileType = file; path = Scene.pod; sourceTree = "<group>"; };
+		3E10810A15684ED10013FC0C /* man_clothes.pod */ = {isa = PBXFileReference; lastKnownFileType = file; path = man_clothes.pod; sourceTree = "<group>"; };
 		3E2DD5C91510E5B9002F18C5 /* SkinningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SkinningViewController.h; sourceTree = "<group>"; };
 		3E2DD5CA1510E5B9002F18C5 /* SkinningViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SkinningViewController.mm; sourceTree = "<group>"; };
+		3E9F72C9152648B100B7F2C0 /* man_rig.pod */ = {isa = PBXFileReference; lastKnownFileType = file; name = man_rig.pod; path = ../../../Desktop/man_rig.pod; sourceTree = "<group>"; };
 		3EDA0AFE150E543600F0B423 /* GLKPVRT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLKPVRT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDA0B02150E543600F0B423 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3EDA0B04150E543600F0B423 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,6 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				3E00EFD8151E2D7500B4218E /* man.pod */,
+				3E10810A15684ED10013FC0C /* man_clothes.pod */,
+				3E9F72C9152648B100B7F2C0 /* man_rig.pod */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -314,6 +320,8 @@
 				3E00EFD6151E2D6B00B4218E /* Legs.pvr in Resources */,
 				3E00EFD7151E2D6B00B4218E /* Belt.pvr in Resources */,
 				3E00EFD9151E2D7500B4218E /* man.pod in Resources */,
+				3E9F72CA152648B100B7F2C0 /* man_rig.pod in Resources */,
+				3E10810B15684ED10013FC0C /* man_clothes.pod in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

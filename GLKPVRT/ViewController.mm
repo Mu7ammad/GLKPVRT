@@ -173,7 +173,7 @@ const char c_szVertShaderBinFile[]	= "VertShader.vsc";
     view.context = self.context;
     view.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     
-    [self initPod:@"Scene"];
+    [self initPod:@"test"];
     [self setupGL];
 }
 

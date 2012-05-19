@@ -57,24 +57,24 @@ void main()
 		
 		// PowerVR SGX supports uniforms in the for loop and nested conditionals.
 		// For performance reasons, the code below should be like this:
-		//	for (lowp int i = 1; i < BoneCount; ++i)
-		//	{
-		//		boneIndex = boneIndex.yzwx;
-		//		boneWeights = boneWeights.yzwx;
-		//	
-		//		boneMatrix = BoneMatrixArray[boneIndex.x];
-		//		normalMatrix = BoneMatrixArrayIT[boneIndex.x];
-		//	
-		//		if (boneWeights.x > 0.0)
-		//		{
-		//			position += boneMatrix * vec4(inVertex, 1.0) * boneWeights.x;
-		//			worldNormal += normalMatrix * inNormal * boneWeights.x;
-		//		}
-		//	}
+			for (lowp int i = 1; i < BoneCount; ++i)
+			{
+				boneIndex = boneIndex.yzwx;
+				boneWeights = boneWeights.yzwx;
+			
+				boneMatrix = BoneMatrixArray[boneIndex.x];
+				normalMatrix = BoneMatrixArrayIT[boneIndex.x];
+			
+				if (boneWeights.x > 0.0)
+                {
+					position += boneMatrix * vec4(inVertex, 1.0) * boneWeights.x;
+					worldNormal += normalMatrix * inNormal * boneWeights.x;
+                }
+			}
 		// However this code causes a severe crash on PCEmulation
 		// in some ATI hardware due to a very limited loop support.
 		// If you are targeting SGX, please, modify the code below.
-		for (lowp int i = 1; i < 3; ++i)
+		/*for (lowp int i = 1; i < 3; ++i)
 		{
 			if(i<BoneCount)
 			{
@@ -88,8 +88,10 @@ void main()
 				position += boneMatrix * vec4(inVertex, 1.0) * boneWeights.x;
 				worldNormal += normalMatrix * inNormal * boneWeights.x;
 			}
-		}		
-		gl_Position = ViewProjMatrix * position;
+		}*/		
+		
+         
+         gl_Position = ViewProjMatrix * position;
 		// Simple diffuse lighting
 		LightIntensity = max(0.0, dot(normalize(worldNormal), -LightDirWorld));
 	}
